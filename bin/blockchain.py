@@ -158,7 +158,6 @@ class BlockChain:
             # print(transactions)
             for tx in transactions:
                 tx = json.loads(tx)
-                # if isinstance(tx, dict):
                 
                 if tx['from'] == public_key:
                     balance -= tx['amount']  # Deduzir o valor se for uma transação de saída
